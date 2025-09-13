@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #e5eaf0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #1c4477;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 1.25rem;
+}
+
+header .logo {
+  color: #fff;
+  font-family: "Libertinus Keyboard", serif;
+  font-size: 2rem;
+  margin: 0;
+  text-align: left;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+main aside {
+  background-color: #fff;
+  border: 4px solid #1c4477;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  min-width: 345px;
+  padding: 1.25rem;
+  margin: 1rem;
+}
+
+main aside h2 {
+  margin: 0.75rem 0;
+}
+
+main aside form label {
+  display: block;
+  font-weight: 500;
+}
+
+main aside form label .required {
+  color: #ff000f;
+}
+
+main aside form input[type="text"],
+main aside form input[type="number"] {
+  border: 2px solid #505050;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+main aside form .check-box-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+main aside form .check-box-container input[type="checkbox"] {
+  margin: 0;
+}
+
+main aside form button {
+  background-color: #1c4477;
+  border: 4px solid#1C4477;
+  border-radius: 0.75rem;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+main aside form button:hover {
+  color: #1c4477;
+  cursor: pointer;
+  background-color: #fff;
+  border-color: #1c4477;
+  transition: 0.15s ease-in-out;
+}
+
+main .content {
+  width: 85%;
+  padding: 1rem;
+}
+
+main .content .book-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+main .content .bookshelf {
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+main .content .bookshelf h2 {
+  margin-top: 0;
+}
+
+main .content .bookshelf .book-card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 250px;
+}
+
+main .content .bookshelf .book-card h3 {
+  margin-top: 0;
+}
+
+main .content .bookshelf .book-card .button-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+main .content .bookshelf .book-card .button-container button {
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 0.25rem;
+}
+
+main .content .bookshelf .book-card .button-container .done-reading-button {
+  background-color: green;
+}
+
+main .content .bookshelf .book-card .button-container .remove-book-button {
+  background-color: red;
+}
+
+@media screen and (max-width: 964px) {
+  header .heading {
+    font-size: 1.75rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  main aside {
+    min-width: 250px;
+  }
+
+  main .content {
+    margin-inline: auto;
+    padding: 1rem 0;
+  }
+
+  main .content .book-container .book-card {
+    min-width: 100%;
+  }
+}
